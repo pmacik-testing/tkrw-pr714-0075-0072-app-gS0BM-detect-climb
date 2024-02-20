@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-gzwb
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0072-tenant/tkrw-pr714-0075-0072-app/devfile-sample-gzwb@sha256:a30f4b8b33e270f14b12e3e72c2c512822e259c7fc2d02eb05abda2c0a85d76b
+        name: my-nodejs
+        resources: {}
+status: {}
